@@ -1,0 +1,5 @@
+openai==0.27.0
+python-dotenv==1.0.0
+python-telegram-bot==20.1
+python-telegram-bot[job-queue]
+tiktoken==0.3.0
