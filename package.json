@@ -1,19 +1,14 @@
 {
-    "name": "sigma-bot",
-    "version": "1.0.0",
-    "description": "Telegram bot built with Python",
-    "main": "bot.py",
-    "scripts": {
-        "start": "node main.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Rxmsey/sigmabot"
-    },
-    "author": "Ramsey",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/your-username/your-repo/issues"
-    },
-    "homepage": "https://github.com/your-username/your-repo#readme"
+  "builds": [
+    {
+      "src": "bot.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.py"
+    }
+  ]
 }
